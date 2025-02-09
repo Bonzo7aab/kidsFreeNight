@@ -13,7 +13,7 @@ import ProductListingPage from '@/features/products/components/product-listing';
 import ProductTableAction from '@/features/products/components/product-tables/product-table-action';
 
 export const metadata = {
-  title: 'Dashboard: Products'
+  title: 'Dashboard: Events'
 };
 
 type pageProps = {
@@ -33,11 +33,11 @@ export default async function Page(props: pageProps) {
       <div className='flex flex-1 flex-col space-y-4'>
         <div className='flex items-start justify-between'>
           <Heading
-            title='Products'
-            description='Manage products (Server side table functionalities.)'
+            title='Events'
+            description='Manage events (Server side table functionalities.)'
           />
           <Link
-            href='/dashboard/product/new'
+            href='/dashboard/event/new'
             className={cn(buttonVariants(), 'text-xs md:text-sm')}
           >
             <Plus className='mr-2 h-4 w-4' /> Add New

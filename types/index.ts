@@ -1,5 +1,71 @@
 import { Icons } from '@/components/icons';
 
+export interface Trainers {
+  id: number;
+  created_at: string;
+  approved_date: string;
+  updated_at: string;
+  name: string;
+  photo_url: string;
+  description: string;
+  salary: number;
+  category: string;
+  experience: string;
+  specialization: string;
+  availibility: string;
+  completed_events: string[];
+  email: string;
+  phone_number: string;
+}
+
+export interface Place {
+  id: number;
+  created_at: string;
+  approved_date: string;
+  updated_at: string;
+  name: string;
+  photo_url: string;
+  location: string;
+  coordinates: {
+    lat: number;
+    long: number;
+  };
+  availibility: string[];
+  rent_price: number;
+  activities: string[];
+  email: string;
+  phone_number: string;
+}
+
+export interface People {
+  parents: Parent[];
+  kids: Kid[];
+}
+
+export interface Parent {
+  id: number;
+  created_at: string;
+  updated_at: string;
+  name: string;
+  surname: string;
+  kids: string[];
+  location: string;
+  availibility_days: string[];
+  email: string;
+  phone_number: string;
+  activities: string[];
+}
+
+export interface Kid {
+  id: number;
+  created_at: string;
+  updated_at: string;
+  name: string;
+  surname: string;
+  age: number;
+  liked_activities: string[];
+}
+
 export interface NavItem {
   title: string;
   url: string;
